@@ -9,10 +9,26 @@
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{graphicx}%插入图片
+\usepackage{tabularx,booktabs}%控制版面
+\usepackage{float}%控制图片位置
+\usepackage{setspace}% 调整行间距
+\usepackage{multicol}%分栏
+\usepackage{geometry}%设置页边距
+\usepackage{fontawesome}%特殊符号,以\fa开头
+\usepackage{multirow}%合并行
+\usepackage{makecell}%合并行
+\usepackage{array}%设置表格行距
+
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
 \name{蒋贤伟}
+
+% \hfill
+% \begin{minipage}[t]{0.2\linewidth}
+% \includegraphics[height=8\baselineskip]{head.png}
+% \end{minipage}
 
 \basicInfo{
   \email{vanot313@gmail.com} \textperiodcentered\ 
@@ -26,17 +42,17 @@
 \section{\faUsers\ 项目经历}
 
 \datedsubsection{\textbf{第十二届中国大学生服务外包创新创业大赛}}{2021 年 1 月 -- 2021 年 5 月}
-\role{https://github.com/vanot313/project.data-asset-valuation}{团队项目，担任队长}
+\role{https://github.com/vanot313/project-data\_asset\_valuation-BC}{团队项目，担任队长}
 \begin{onehalfspacing}
 Flask 后端应用
 \begin{itemize}
-  \item 完成 flask 应用的 MVC 框架设计
+  \item 完成 flask 应用的 MVC 框架设计与简单的权限验证安全实现
   \item 采用 mysql 数据库，完成全部功能接口，数据接口编写
 \end{itemize}
 完整项目在服务端（ubuntu）的部署上线
 \begin{itemize}
-  \item 采用 docker 自动化部署方案
-  \item 采用 nginx 反向代理服务器，完成前后端应用分离集群部署
+  \item 采用 docker 自动化部署方案，docker-compose 配置完成前后端应用的联合部署
+  \item 采用 nginx 反向代理服务器，完成应用在服务端的集群部署
 \end{itemize}
 \end{onehalfspacing}
 
@@ -45,13 +61,13 @@ Flask 后端应用
 \begin{onehalfspacing}
 Unity 横板过关游戏
 \begin{itemize}
-  \item 负责游戏创意的主要策划
-  \item 完成游戏框架（状态机，人物碰撞模型与碰撞逻辑）编写
+  \item 负责游戏创意的策划，并完成游戏中关卡创意部分的实现（boss 的行为逻辑，与场景的交互逻辑）
+  \item 完成游戏框架（状态机，人物碰撞模型与碰撞逻辑）编写，在 github 仓库中有对框架的介绍文档
 \end{itemize}
 \end{onehalfspacing}
 
 \datedsubsection{\textbf{健康码管理系统}}{2020 年 5 月 -- 2020 年 7 月}
-\role{https://github.com/vanot313/}{个人项目}
+\role{https://github.com/vanot313/design-xhealthcode-BC}{个人项目}
 \begin{onehalfspacing}
 JavaWeb 全栈开发
 \begin{itemize}
@@ -70,16 +86,16 @@ JavaWeb 全栈开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 熟悉Python，了解Java，C++，熟悉基本数据结构和算法，有良好的编程风格
-  \item 熟悉Flask框架，SSM框架
-  \item 熟悉Docker，Nginx等项目部署相关知识
-  \item 了解深度学习基本算法，LSTM长短时记忆神经网络，CNN卷积神经网络 
+  \item 熟悉 Python、Java，了解 C++，熟悉基本数据结构和算法，有良好的编程风格
+  \item 熟悉 Flask 框架、SSM、Springboot框架，了解 Vue 前端生态
+  \item 熟悉 Docker，Nginx 等项目部署相关知识，了解 Linux 环境下操作
+  \item 了解深度学习基本算法，LSTM长短时记忆神经网络
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
 \datedline{\textit{银奖}, ACM程序设计校迎新赛}{2018 年 11 月}
 \datedline{\textit{三等}, 校奖学金}{2018 年 - 2019 年}
-\datedline{\textit{一作}, 软件著作权}{2021 年}
+\datedline{\textit{二作}, 软件著作权}{2021 年}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
